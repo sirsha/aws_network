@@ -1,16 +1,12 @@
 # Default tags
 variable "default_tags" {
-  default = {
-    "Owner" = "Irina"
-    "App"   = "Web"
-  }
+  default = {}
   type        = map(any)
   description = "Default tags to be appliad to all AWS resources"
 }
 
 # Name prefix
 variable "prefix" {
-  default     = "week4"
   type        = string
   description = "Name prefix"
 }
@@ -31,7 +27,7 @@ variable "vpc_cidr" {
 
 # Variable to signal the current environment 
 variable "env" {
-  default     = "test"
+  default     = "dev"
   type        = string
   description = "Deployment Environment"
 }
